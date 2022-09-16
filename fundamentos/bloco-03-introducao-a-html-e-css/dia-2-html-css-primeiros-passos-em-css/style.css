@@ -1,0 +1,37 @@
+h1 {
+    width: 65px;
+    color: orange;
+    font-family: sans-serif;
+    text-decoration: underline;
+}
+
+p {
+  font-weight: 600;
+  font-size: 3em;
+  font-style: italic;
+  text-align: center;
+}
+
+ul {
+  line-height: 30px;
+}
+
+body {
+  font-size: 16px;
+}
+
+.favorite-color {
+    background-color: blue;
+}
+
+#lista1 {
+  color: yellow;
+}
+
+#lista2 {
+  color: red;
+}
+
+#lista3 {
+  color: brown;
+}
