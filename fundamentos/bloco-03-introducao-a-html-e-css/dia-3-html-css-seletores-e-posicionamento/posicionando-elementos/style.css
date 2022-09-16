@@ -1,19 +1,24 @@
 .super-mario {
     width: 200px;
+    border: 1px red solid;
   }
   
   .goomba {
     width: 100px;
+    border: 1px red solid;
+    display: block;
   }
   
   .baloon {
-  
+    border: 1px solid red;
   }
   
   .speech {
     font-size: 25px;
+    border: 1px solid red;
   }
   
   .bowser {
     width: 200px;
+    border: 1px red solid;
   }
