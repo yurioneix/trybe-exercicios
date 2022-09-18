@@ -1,3 +1,27 @@
 div:hover {
     border: 1px solid red;
 }
+
+h3 {
+    color: antiquewhite;
+}
+
+div:nth-child(3) {
+    background-color: blue;
+} 
+
+div:nth-child(4) {
+    background-color: orange;
+}
+
+div:nth-child(5) {
+    background-color: green;
+}
+
+div:nth-child(6) {
+    background-color: rgb(92, 9, 160);
+}
+
+div:nth-child(7) {
+    background-color: rgb(204, 109, 102);
+}
