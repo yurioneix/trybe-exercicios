@@ -12,6 +12,7 @@ div:nth-child(4) {
 
 div:nth-child(5) {
     background-color: green;
+    height: 50px;
 }
 
 div:nth-child(6) {
@@ -24,6 +25,7 @@ div:nth-child(7) {
 
 div:nth-child(3) h3 {
     color: white;
+    font-style: italic;
 }
 
 div:nth-child(4) h3 {
@@ -32,6 +34,7 @@ div:nth-child(4) h3 {
 
 div:nth-child(5) h3 {
     color: aqua;
+    font-style: italic;
 }
 
 div:nth-child(6) h3 {
@@ -40,5 +43,6 @@ div:nth-child(6) h3 {
 
 div:nth-child(7) h3 {
     color:yellowgreen;
+    font-style: italic;
 }
 
