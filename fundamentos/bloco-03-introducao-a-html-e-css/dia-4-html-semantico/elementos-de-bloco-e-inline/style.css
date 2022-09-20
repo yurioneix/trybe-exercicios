@@ -35,6 +35,14 @@ h1 {
     text-align: center;
   }
 
+  .prize-description li {
+    display: inline-block;
+  }
+
+  .prize-description li:nth-child(1) {
+    margin-left: 33%;
+  }
+
 li {
     border: 1px solid red;
   }
