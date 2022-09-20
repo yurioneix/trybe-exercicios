@@ -42,7 +42,3 @@ h1 {
   .prize-description li:nth-child(1) {
     margin-left: 33%;
   }
-
-li {
-    border: 1px solid red;
-  }
