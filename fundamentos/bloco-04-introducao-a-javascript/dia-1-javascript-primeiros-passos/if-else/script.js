@@ -1,0 +1,1 @@
+const notaPessoaCandidata = 70; 
