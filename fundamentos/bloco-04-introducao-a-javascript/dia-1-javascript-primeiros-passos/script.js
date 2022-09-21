@@ -3,7 +3,7 @@
 const a = 5; 
 const b = 10; 
 
-let operacao = 'Módulo';
+let operacao = '';
 let resultado;
 
 switch (operacao) {
@@ -27,4 +27,6 @@ switch (operacao) {
         resultado = a % b;
         console.log(resultado)
         break;
+    default:
+        console.log('Insira operação válida')
 }
