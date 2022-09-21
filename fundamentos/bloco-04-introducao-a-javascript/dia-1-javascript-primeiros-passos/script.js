@@ -30,3 +30,5 @@ switch (operacao) {
     default:
         console.log('Insira operação válida')
 }
+
+// Exercício 2
