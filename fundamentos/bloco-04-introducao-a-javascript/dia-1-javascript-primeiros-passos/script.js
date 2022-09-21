@@ -3,7 +3,7 @@
 const a = 5; 
 const b = 10; 
 
-let operacao = 'Multiplicação';
+let operacao = 'Divisão';
 let resultado;
 
 switch (operacao) {
@@ -17,6 +17,10 @@ switch (operacao) {
         break;
     case 'Multiplicação':
         resultado = a * b;
+        console.log(resultado)
+        break;
+    case 'Divisão':
+        resultado = a / b;
         console.log(resultado)
         break;
 
