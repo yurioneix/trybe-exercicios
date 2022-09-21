@@ -10,3 +10,7 @@
 ### Exercício 2
 
 #### Utilize if/else para fazer um programa que retorne o maior de dois números. Defina, no começo do programa, duas constantes com os valores que serão comparados.
+
+### Exercício 3 
+
+#### Utilize if/else para fazer um programa que retorne o maior de três números. Defina, no começo do programa, três constantes com os valores que serão comparados.
