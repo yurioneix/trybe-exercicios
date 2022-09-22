@@ -46,14 +46,26 @@
 
 // Exercício 3 
 
-const num1 = 5;
-const num2 = 10; 
-const num3 = 15; 
+// const num1 = 5;
+// const num2 = 10; 
+// const num3 = 15; 
 
-if (num1 > num2 && num1 > num3) {
-    console.log('num1 é o maior dentre os 3 números')
-} else if (num2 > num1 && num2 > num3) {
-    console.log('num2 é o maior dentre os 3 números')
-} else if (num3 > num1 && num3 > num2) {
-    console.log('num3 é o maior dentre os 3 números')
+// if (num1 > num2 && num1 > num3) {
+//     console.log('num1 é o maior dentre os 3 números')
+// } else if (num2 > num1 && num2 > num3) {
+//     console.log('num2 é o maior dentre os 3 números')
+// } else if (num3 > num1 && num3 > num2) {
+//     console.log('num3 é o maior dentre os 3 números')
+// }
+
+// Exercício 4
+
+let number = 0; 
+
+if (number > 0) {
+    console.log("positive")
+} else if (number < 0) {
+    console.log("negative") 
+} else {
+    console.log("O número é 0")
 }
