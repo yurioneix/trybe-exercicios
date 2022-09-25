@@ -55,11 +55,20 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 7
 
-let smaller = numbers[0]; 
+// let smaller = numbers[0]; 
 
-for (let index = 1; index < numbers.length; index += 1) {
-    if (numbers[index] < smaller) {
-        smaller = numbers[index];
-    }
+// for (let index = 1; index < numbers.length; index += 1) {
+//     if (numbers[index] < smaller) {
+//         smaller = numbers[index];
+//     }
+// }
+// console.log(smaller)
+
+// Exercício 8 
+
+let array = []; 
+
+for (let index = 1; index <= 25; index += 1) {
+    array.push(index)
 }
-console.log(smaller)
+console.log(array)
