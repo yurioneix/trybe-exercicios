@@ -19,7 +19,7 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // for(let index = 0; index < numbers.length; index += 1) {
 //     average += numbers[index];
 // }
-// console.log(average / numbers.length)
+// average = average / numbers.length
 
 // Exercício 4
 // if (average > 20) {
@@ -27,10 +27,11 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 // } else if (average < 20) {
 //     console.log('Valor menor ou igual a 20')
 // }
+// console.log(average)
 
 // Exercício 5 
 
-// let bigger = 0; 
+// let bigger = numbers[0]; 
 
 // for (let index = 0; index < numbers.length; index += 1) {
 //     if (bigger < numbers[index]) {
@@ -41,13 +42,24 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 6 
 
-let odd = 0;
+// let odd = 0;
 
-for (let index = 0; index < numbers.length; index += 1) {
-    if (numbers[index] % 2 != 0) {
-        odd += 1; 
-    } else {
-        console.log('Nenhum valor ímpar encontrado');
+// for (let index = 0; index < numbers.length; index += 1) {
+//     if (numbers[index] % 2 != 0) {
+//         odd += 1; 
+//     } else {
+//         console.log('Nenhum valor ímpar encontrado');
+//     }
+// }
+// console.log(odd);
+
+// Exercício 7
+
+let smaller = numbers[0]; 
+
+for (let index = 1; index < numbers.length; index += 1) {
+    if (numbers[index] < smaller) {
+        smaller = numbers[index];
     }
 }
-console.log(odd);
+console.log(smaller)
