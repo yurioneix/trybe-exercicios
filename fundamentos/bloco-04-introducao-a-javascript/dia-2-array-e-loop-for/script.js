@@ -30,11 +30,24 @@ let numbers = [5, 9, 3, 19, 70, 8, 100, 2, 35, 27];
 
 // Exercício 5 
 
-let bigger = 0; 
+// let bigger = 0; 
+
+// for (let index = 0; index < numbers.length; index += 1) {
+//     if (bigger < numbers[index]) {
+//         bigger = numbers[index];
+//     }
+// }
+// console.log(bigger)
+
+// Exercício 6 
+
+let odd = 0;
 
 for (let index = 0; index < numbers.length; index += 1) {
-    if (bigger < numbers[index]) {
-        bigger = numbers[index];
+    if (numbers[index] % 2 != 0) {
+        odd += 1; 
+    } else {
+        console.log('Nenhum valor ímpar encontrado');
     }
 }
-console.log(bigger)
+console.log(odd);
