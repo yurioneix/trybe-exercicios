@@ -4,9 +4,11 @@ const urgentDivs = document.getElementsByClassName('emergency-tasks');
 const urgentHeadings = document.querySelectorAll('.emergency-tasks h3');
 const noUrgentDivs = document.getElementsByClassName('no-emergency-tasks');
 const noUrgentHeadings = document.querySelectorAll('.no-emergency-tasks h3');
+const footer = document.getElementById('footer-container');
 
 header.style.backgroundColor = 'rgb(0,176,105)';
 body.style.backgroundColor = 'rgb(243,243,243)';
+footer.style.backgroundColor = 'rgb(0,53,51)';
 
 for (let index = 0; index < urgentDivs.length; index += 1) {
     urgentDivs[index].style.backgroundColor = 'rgb(255,159,132)'
