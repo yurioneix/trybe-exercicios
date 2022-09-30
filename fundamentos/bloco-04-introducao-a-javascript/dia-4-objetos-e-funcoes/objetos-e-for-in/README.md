@@ -9,3 +9,7 @@
 ### Exercício 3
 
 #### Faça um for/in que mostre todas as chaves do objeto. 
+
+### Exercício 4
+
+#### Faça um novo for/in, mas agora mostre todos os valores das chaves do objeto.
