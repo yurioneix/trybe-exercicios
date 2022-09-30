@@ -10,3 +10,8 @@ let info = {
 // Exercício 2
 info['recorrente'] = 'Sim';
 console.log(info)
+
+// Exercício 3
+for (property in info) {
+    console.log(property);
+}
