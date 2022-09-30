@@ -29,19 +29,19 @@ let info2 = {
     recorrente: 'Sim',
   };
 
-  for (property in info) {
-    if (
-        property === 'recorrente' &&
-        info[property] === 'Sim' &&
-        info2[property] === 'Sim'
-      ) {
-        console.log('Ambos recorrentes');
-      } else {
-        console.log(info[property] + ' e ' + info2[property]);
-      }
-    }
+  // for (property in info) {
+  //   if (
+  //       property === 'recorrente' &&
+  //       info[property] === 'Sim' &&
+  //       info2[property] === 'Sim'
+  //     ) {
+  //       console.log('Ambos recorrentes');
+  //     } else {
+  //       console.log(info[property] + ' e ' + info2[property]);
+  //     }
+  //   }
 
-    // Exercício 6
+// Exercício 6
     let leitor = {
       nome: 'Julia',
       sobrenome: 'Pessoa',
@@ -54,3 +54,7 @@ let info2 = {
         },
       ],
     };
+
+    console.log(
+      'O livro favorito de ' + leitor.nome + ' ' + leitor.sobrenome + ' se chama ' + "'" + leitor.livrosFavoritos[0].titulo + "'"
+      )
