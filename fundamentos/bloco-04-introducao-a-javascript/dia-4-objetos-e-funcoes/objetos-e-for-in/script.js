@@ -15,3 +15,8 @@ console.log(info)
 for (property in info) {
     console.log(property);
 }
+
+// Exercício 4
+for (property in info) {
+    console.log(info[property]);
+}
