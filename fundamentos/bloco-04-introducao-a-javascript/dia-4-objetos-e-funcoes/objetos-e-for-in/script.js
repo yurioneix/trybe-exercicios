@@ -5,18 +5,38 @@ let info = {
     nota: 'Namorada do personagem principal nos quadrinhos do Pato Donald',
   };
 
-   console.log('Bem vinda, ' + info.personagem)
+   //console.log('Bem vinda, ' + info.personagem)
 
 // Exercício 2
 info['recorrente'] = 'Sim';
-console.log(info)
+//console.log(info)
 
 // Exercício 3
 for (property in info) {
-    console.log(property);
+    //console.log(property);
 }
 
 // Exercício 4
 for (property in info) {
-    console.log(info[property]);
+    //console.log(info[property]);
 }
+
+// Exercício 5
+let info2 = {
+    personagem: 'Tio Patinhas',
+    origem: "Christmas on Bear Mountain, Dell's Four Color Comics #178",
+    nota: 'O último MacPatinhas',
+    recorrente: 'Sim',
+  };
+
+  for (property in info) {
+    if (
+        property === 'recorrente' &&
+        info[property] === 'Sim' &&
+        info2[property] === 'Sim'
+      ) {
+        console.log('Ambos recorrentes');
+      } else {
+        console.log(info[property] + ' e ' + info2[property]);
+      }
+    }
