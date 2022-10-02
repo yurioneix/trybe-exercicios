@@ -1,12 +1,10 @@
+//Exercício 1
 function verificaPalindromo (string) {
-    let arrayString = string.split('')
-    console.log(arrayString);
-    let arrayStringReverse = arrayString.reverse();
-    console.log(arrayStringReverse);
-
-    let palindromo = (arrayString === arrayStringReverse) ? true : false;
+    let reverse = string.split('').reverse().join('');
+    let palindromo = reverse === string ? true : false;
 
     return palindromo;
 }
 
-console.log(verificaPalindromo('beterraba'));
+console.log(verificaPalindromo('arara'));
+console.log(verificaPalindromo('desenvolvimento'));
