@@ -56,10 +56,15 @@
 // Exercício 5
 
 function mostRepeatedNumber (array) {
+    let counter = 0;
     let repeatedNumber1 = array[0];
 
     for (number in array) {
-        console.log(`Posição ${number}: ${array[number]}`);
+        if (repeatedNumber1 === array[number]) {
+            counter += 1;
+        }
+        console.log(`Número se repete: ${counter} vezes`)
+        console.log(`Posição ${number}: número ${array[number]}`);
     }
 }
 mostRepeatedNumber([2, 3, 2, 5, 8, 2, 3]);
