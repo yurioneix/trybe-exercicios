@@ -26,21 +26,29 @@
 
 // Exercício 3
 
-function lowerIndex (array) {
-    let lowerIndex = 0;
+// function lowerIndex (array) {
+//     let lowerIndex = 0;
 
-    for (index in array) {
-        if (array[index] < array[lowerIndex]) {
-            lowerIndex = index;
-        }
-    }
-    console.log(lowerIndex);
-}
+//     for (index in array) {
+//         if (array[index] < array[lowerIndex]) {
+//             lowerIndex = index;
+//         }
+//     }
+//     console.log(lowerIndex);
+// }
 
-lowerIndex([2, 4, 6, 7, 10, 0, -3]);
+// lowerIndex([2, 4, 6, 7, 10, 0, -3]);
 
 //Exercício 4
 
 function biggestName (array) {
-    let biggestName = 0;
+    let biggestName = array[0];
+
+    for (names in array) {
+        if (array[names].length > biggestName.length) {
+            biggestName = array[names];
+        }
+    }
+    console.log(biggestName);
 }
+biggestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
