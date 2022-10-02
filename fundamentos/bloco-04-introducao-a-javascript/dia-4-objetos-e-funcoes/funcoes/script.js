@@ -8,3 +8,9 @@ function verificaPalindromo (string) {
 
 console.log(verificaPalindromo('arara'));
 console.log(verificaPalindromo('desenvolvimento'));
+
+// Exercício 2 
+
+function lowerIndexValue (array) {
+    
+}
