@@ -41,16 +41,25 @@
 
 //Exercício 4
 
-function biggestName (array) {
-    let biggestName = array[0];
+// function biggestName (array) {
+//     let biggestName = array[0];
 
-    for (names in array) {
-        if (array[names].length > biggestName.length) {
-            biggestName = array[names];
-        }
-    }
-    console.log(biggestName);
-}
-biggestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
+//     for (names in array) {
+//         if (array[names].length > biggestName.length) {
+//             biggestName = array[names];
+//         }
+//     }
+//     console.log(biggestName);
+// }
+// biggestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
 
 // Exercício 5
+
+function mostRepeatedNumber (array) {
+    let repeatedNumber1 = array[0];
+
+    for (number in array) {
+        console.log(`Posição ${number}: ${array[number]}`);
+    }
+}
+mostRepeatedNumber([2, 3, 2, 5, 8, 2, 3]);
