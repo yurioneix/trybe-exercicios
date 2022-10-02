@@ -52,3 +52,5 @@ function biggestName (array) {
     console.log(biggestName);
 }
 biggestName(['José', 'Lucas', 'Nádia', 'Fernanda', 'Cairo', 'Joana']);
+
+// Exercício 5
