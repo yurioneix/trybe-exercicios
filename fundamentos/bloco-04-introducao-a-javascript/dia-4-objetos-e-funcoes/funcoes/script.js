@@ -11,15 +11,31 @@
 
 // Exercício 2 
 
-function biggerIndex (array) {
-    let biggerIndex = 0;
+// function biggerIndex (array) {
+//     let biggerIndex = 0;
+
+//     for (index in array) {
+//         if (array[biggerIndex] < array[index]) {
+//             biggerIndex = index;
+//         }
+//     }
+//     console.log(biggerIndex);
+// }
+
+// biggerIndex([2, 3, 6, 7, 10, 1]);
+
+// Exercício 3
+
+function lowerIndex (array) {
+    let lowerIndex = 0;
 
     for (index in array) {
-        if (array[biggerIndex] < array[index]) {
-            biggerIndex = index;
+        if (array[index] < array[lowerIndex]) {
+            lowerIndex = index;
         }
     }
-    console.log(biggerIndex);
+    console.log(lowerIndex);
 }
 
-biggerIndex([2, 3, 6, 7, 10, 1]);
+lowerIndex([2, 4, 6, 7, 10, 0, -3]);
+
