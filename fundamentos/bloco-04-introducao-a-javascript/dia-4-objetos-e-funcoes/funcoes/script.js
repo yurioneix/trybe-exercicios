@@ -39,3 +39,5 @@ function lowerIndex (array) {
 
 lowerIndex([2, 4, 6, 7, 10, 0, -3]);
 
+//Exercício 3
+
