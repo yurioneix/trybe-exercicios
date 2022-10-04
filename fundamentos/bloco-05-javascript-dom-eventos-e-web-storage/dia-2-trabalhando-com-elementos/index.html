@@ -71,7 +71,11 @@
         let createSection = document.createElement('section');
         createSection.className = 'center-content';
         main.appendChild(createSection);
-        
+        //Requisito 4
+        const section = document.querySelector('.main-content');
+        let paragraph = document.createElement('p');
+        paragraph.innerText = 'Parágrafo inserido através do D.O.M';
+        section.appendChild(paragraph);
     </script>
   </body>
 </html>
