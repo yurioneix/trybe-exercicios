@@ -62,6 +62,8 @@
         const body = document.getElementsByTagName('body')[0];
         let createH1 = document.createElement('h1');
         createH1.innerText = 'Exercício - JavaScript DOM'
+        //Requisito 10
+        createH1.className = 'title';
         body.appendChild(createH1);
 
         //Requisito 2
@@ -122,12 +124,19 @@
 
         //Requisito 9
         for (let index = 0; index < 3; index += 1) {
-            let createH3 = document.createElement('h3'); 
+            let createH3 = document.createElement('h3');
+             //Requisito 11
+            createH3.className = 'description';
             main.appendChild(createH3);
         }
 
-        //Requisito 10
-        createH1.className = 'title';
+        //Requisito 12
+        main.removeChild(sectionLeftContent);
+
+        
+
+       
+        
     </script>
   </body>
 </html>
