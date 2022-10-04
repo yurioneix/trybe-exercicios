@@ -77,8 +77,14 @@
         paragraph.innerText = 'Parágrafo inserido através do D.O.M';
         section.appendChild(paragraph);
         //Requisito 5
-        createSection.className = 'left-content';
-        main.appendChild(createSection);
+        let createLeftSection = document.createElement('section');
+        console.log(createLeftSection)
+        createLeftSection.className = 'left-content';
+        main.appendChild(createLeftSection);
+        //Requisito 6
+        let createRightSection = document.createElement('section')
+        createRightSection.className = 'right-content';
+        main.appendChild(createRightSection);
     </script>
   </body>
 </html>
