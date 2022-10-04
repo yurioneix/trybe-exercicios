@@ -63,33 +63,39 @@
         let createH1 = document.createElement('h1');
         createH1.innerText = 'Exercício - JavaScript DOM'
         body.appendChild(createH1);
+
         //Requisito 2
         
         let createMain = document.createElement('main');
         createMain.className = 'main-content';
         body.appendChild(createMain);
+
         //Requisito 3 
         
         const main = document.querySelector('.main-content');
         let createSection = document.createElement('section');
         createSection.className = 'center-content';
         main.appendChild(createSection);
+
         //Requisito 4
         
         const section = document.querySelector('.main-content');
         let paragraph = document.createElement('p');
         paragraph.innerText = 'Parágrafo inserido através do D.O.M';
         section.appendChild(paragraph);
+
         //Requisito 5
         
         let createLeftSection = document.createElement('section');
         createLeftSection.className = 'left-content';
         main.appendChild(createLeftSection);
+
         //Requisito 6
         
         let createRightSection = document.createElement('section')
         createRightSection.className = 'right-content';
         main.appendChild(createRightSection);
+
         //Requisito 7
         
         let sectionLeftContent = document.querySelector('.left-content');
@@ -97,6 +103,7 @@
         createImage.src = 'https://picsum.photos/200' 
         createImage.className = 'small-image';
         sectionLeftContent.appendChild(createImage);
+
         //Requisito 8
         
         let ul = document.createElement('ul');
@@ -111,6 +118,12 @@
             let fatherUl = document.querySelector('.list');
             createLi.innerText = numberInFull[index];
             fatherUl.appendChild(createLi);
+        }
+
+        //Requisito 9
+        for (let index = 0; index < 3; index += 1) {
+            let createH3 = document.createElement('h3'); 
+            main.appendChild(createH3);
         }
     </script>
   </body>
