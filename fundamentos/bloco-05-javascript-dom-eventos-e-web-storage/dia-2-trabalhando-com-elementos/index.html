@@ -86,10 +86,11 @@
         createRightSection.className = 'right-content';
         main.appendChild(createRightSection);
         //Requisito 7
+        let sectionLeftContent = document.querySelector('.left-content');
         let createImage = document.createElement('img');
         createImage.src = 'https://picsum.photos/200' 
         createImage.className = 'small-image';
-        main.appendChild(createImage);
+        sectionLeftContent.appendChild(createImage);
     </script>
   </body>
 </html>
