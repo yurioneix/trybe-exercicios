@@ -58,39 +58,59 @@
   <body>
     <script>
         //Requisito 1
+        
         const body = document.getElementsByTagName('body')[0];
         let createH1 = document.createElement('h1');
         createH1.innerText = 'Exercício - JavaScript DOM'
         body.appendChild(createH1);
         //Requisito 2
+        
         let createMain = document.createElement('main');
         createMain.className = 'main-content';
         body.appendChild(createMain);
         //Requisito 3 
+        
         const main = document.querySelector('.main-content');
         let createSection = document.createElement('section');
         createSection.className = 'center-content';
         main.appendChild(createSection);
         //Requisito 4
+        
         const section = document.querySelector('.main-content');
         let paragraph = document.createElement('p');
         paragraph.innerText = 'Parágrafo inserido através do D.O.M';
         section.appendChild(paragraph);
         //Requisito 5
+        
         let createLeftSection = document.createElement('section');
-        console.log(createLeftSection)
         createLeftSection.className = 'left-content';
         main.appendChild(createLeftSection);
         //Requisito 6
+        
         let createRightSection = document.createElement('section')
         createRightSection.className = 'right-content';
         main.appendChild(createRightSection);
         //Requisito 7
+        
         let sectionLeftContent = document.querySelector('.left-content');
         let createImage = document.createElement('img');
         createImage.src = 'https://picsum.photos/200' 
         createImage.className = 'small-image';
         sectionLeftContent.appendChild(createImage);
+        //Requisito 8
+        
+        let ul = document.createElement('ul');
+        let rightContentSection = document.querySelector('.right-content');
+        ul.className = 'list'
+        rightContentSection.appendChild(ul); 
+        
+        for (let index = 1; index <= 10; index += 1) {
+            let numberInFull = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+            let createLi = document.createElement('li');
+            let fatherUl = document.querySelector('.list');
+            fatherUl.appendChild(createLi);
+        }
     </script>
   </body>
 </html>
