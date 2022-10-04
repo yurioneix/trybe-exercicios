@@ -1,0 +1,150 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width" />
+    <title>Exercício</title>
+    <style>
+      section {
+        border-color: black;
+        border-style: solid;
+      }
+
+      .title {
+        text-align: center;
+      }
+
+      .main-content {
+        background-color: yellow;
+      }
+
+      .main-content .center-content {
+        background-color: red;
+        width: 50%;
+        margin-left: auto;
+        margin-right: auto;
+      }
+
+      .main-content .center-content p {
+        font-style: italic;
+      }
+
+      .main-content .left-content {
+        background-color: green;
+        width: 60%;
+        margin-left: 0;
+        margin-right: auto;
+      }
+
+      .main-content .left-content .small-image {
+        display: block;
+        margin-left: auto;
+        margin-right: auto;
+        border-radius: 100%;
+      }
+
+      .main-content .right-content {
+        background-color: blue;
+        width: 60%;
+        margin-left: auto;
+        margin-right: 0;
+      }
+
+      .main-content .description {
+        text-align: center;
+      }
+    </style>
+  </head>
+  <body>
+    <script>
+        //Requisito 1
+        
+        const body = document.getElementsByTagName('body')[0];
+        let createH1 = document.createElement('h1');
+        createH1.innerText = 'Exercício - JavaScript DOM'
+        //Requisito 10
+        createH1.className = 'title';
+        body.appendChild(createH1);
+
+        //Requisito 2
+        
+        let createMain = document.createElement('main');
+        createMain.className = 'main-content';
+        body.appendChild(createMain);
+
+        //Requisito 3 
+        
+        const main = document.querySelector('.main-content');
+        let createSection = document.createElement('section');
+        createSection.className = 'center-content';
+        main.appendChild(createSection);
+
+        //Requisito 4
+        
+        const section = document.querySelector('.main-content');
+        let paragraph = document.createElement('p');
+        paragraph.innerText = 'Parágrafo inserido através do D.O.M';
+        section.appendChild(paragraph);
+
+        //Requisito 5
+        
+        let createLeftSection = document.createElement('section');
+        createLeftSection.className = 'left-content';
+        main.appendChild(createLeftSection);
+
+        //Requisito 6
+        
+        let createRightSection = document.createElement('section')
+        createRightSection.className = 'right-content';
+        //Requisito 13
+        createRightSection.style.margin = 'auto';
+        main.appendChild(createRightSection);
+
+        //Requisito 7
+        
+        let sectionLeftContent = document.querySelector('.left-content');
+        let createImage = document.createElement('img');
+        createImage.src = 'https://picsum.photos/200' 
+        createImage.className = 'small-image';
+        sectionLeftContent.appendChild(createImage);
+
+        //Requisito 8
+        
+        let ul = document.createElement('ul');
+        let rightContentSection = document.querySelector('.right-content');
+        ul.className = 'list'
+        rightContentSection.appendChild(ul); 
+        
+        for (let index = 0; index < 10; index += 1) {
+            let numberInFull = ['um', 'dois', 'três', 'quatro', 'cinco', 'seis', 'sete', 'oito', 'nove', 'dez'];
+
+            let createLi = document.createElement('li');
+            let fatherUl = document.querySelector('.list');
+            createLi.innerText = numberInFull[index];
+            fatherUl.appendChild(createLi);
+        }
+
+        //Requisito 9
+        for (let index = 0; index < 3; index += 1) {
+            let createH3 = document.createElement('h3');
+             //Requisito 11
+            createH3.className = 'description';
+            main.appendChild(createH3);
+        }
+
+        //Requisito 12
+        main.removeChild(sectionLeftContent);
+
+        //Requisito 13
+        main.style.backgroundColor = 'green';
+
+        //Requisito 15
+        ul.removeChild(ul.lastElementChild);
+        ul.removeChild(ul.lastElementChild);
+
+
+       
+        
+    </script>
+  </body>
+</html>
