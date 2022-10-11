@@ -12,3 +12,16 @@ form {
     display: block;
     padding: 10px;
 }
+
+#favorite-place {
+    padding: 10px;
+}
+
+#answer {
+    padding: 10px;
+}
+
+#textarea {
+    display: block;
+    resize: none;
+}
