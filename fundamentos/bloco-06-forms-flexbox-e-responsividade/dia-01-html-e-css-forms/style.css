@@ -1,0 +1,36 @@
+form {
+    padding: 10px;
+    border: 1px solid black
+}
+#header {
+    display: flex;
+    justify-content: center;
+    background-color: aquamarine;
+}
+
+#contact, #favorite-place {
+    margin: 10px;
+}
+
+.contact-label {
+    display: block;
+    padding: 10px;
+}
+
+#answer, #best-date, #agree, #copyright {
+    padding: 10px;
+}
+
+
+#textarea {
+    display: block;
+    resize: none;
+}
+
+#send {
+    margin: 15px;
+    background-color: limegreen;
+    border-radius: 10%;
+    padding: 5px;
+    color: white;
+}
