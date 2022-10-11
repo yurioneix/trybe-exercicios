@@ -15,48 +15,68 @@
     <form action="">
 
         <section id="contact">
-            <label for="fullname" class="contact-label"> Nome:
-                <input type="text" name="name" id="fullname" placeholder="Digite seu nome completo" required>
-            </label>
-            <label for="mail" class="contact-label"> Email:
-                <input type="email" name="email" id="mail" placeholder="Digite seu email" required>
-            </label>
+            <fieldset>
+                <legend>Contato:</legend>
+                <label for="fullname" class="contact-label"> Nome:
+                    <input type="text" name="name" id="fullname" placeholder="Digite seu nome completo" required>
+                </label>
+                <label for="mail" class="contact-label"> Email:
+                    <input type="email" name="email" id="mail" placeholder="Digite seu email" required>
+                </label>
+            </fieldset>
         </section>
 
         <section id="favorite-place">
-            <label for="option1">
-                <input type="radio" name="favorite-place" id="option1"> Cidade
-            </label>
-            <label for="option2">
-                <input type="radio" name="favorite-place" id="option2"> Campo
-            </label>
-            <label for="option3">
-                <input type="radio" name="favorite-place" id="option3"> Praia
-            </label>
-            <label for="option4">
-                <input type="radio" name="favorite-place" id="option4"> Montanha
-            </label>
+            <fieldset id="destiny">
+                <legend>Destino Preferido:</legend>
+                <label for="option1">
+                    <input type="radio" name="favorite-place" id="option1"> Cidade
+                </label>
+                <label for="option2">
+                    <input type="radio" name="favorite-place" id="option2"> Campo
+                </label>
+                <label for="option3">
+                    <input type="radio" name="favorite-place" id="option3"> Praia
+                </label>
+                <label for="option4">
+                    <input type="radio" name="favorite-place" id="option4"> Montanha
+                </label>
+            </fieldset>
         </section>
 
         <section id="answer">
-            <label for="textarea">Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</label>
-            <textarea name="" id="textarea" cols="65" rows="10" maxlength="500"></textarea>
+            <fieldset>
+                <legend>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</legend>
+                <label for="textarea"></label>
+                <textarea name="" id="textarea" cols="65" rows="10" maxlength="500" required></textarea>
+            </fieldset>
         </section>
 
         <section id="best-date">
-            <label for="trip-date">Qual a melhor data para realizar sua viagem?</label>
-            <input type="date" name="date" id="trip-date">
+            <fieldset>
+                <legend>Qual a melhor data para realizar sua viagem?</legend>
+                <label for="trip-date"></label>
+                <input type="date" name="date" id="trip-date" required>
+            </fieldset>
         </section>
 
         <section id="agree">
-            <label for="newsletter">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
-            <input type="checkbox" name="newsletter" id="newsletter">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <label for="newsletter">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                <input type="checkbox" name="newsletter" id="newsletter">
+            </fieldset>
         </section>
 
         <section id="copyright">
-            <label for="image-copyrights">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
-            <input type="checkbox" name="copyright" id="image-copyright">
+            <fieldset>
+                <legend>Direito de imagem</legend>
+                <label for="image-copyrights">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                <input type="checkbox" name="copyright" id="image-copyright">
+            </fieldset>
         </section>
+
+        <button type="submit" id="send">Enviar</button>
     </form>
 </body>
 </html>
