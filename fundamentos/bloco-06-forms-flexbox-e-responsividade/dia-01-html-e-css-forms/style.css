@@ -13,13 +13,10 @@ form {
     padding: 10px;
 }
 
-#favorite-place {
+#favorite-place, #answer, #best-date {
     padding: 10px;
 }
 
-#answer {
-    padding: 10px;
-}
 
 #textarea {
     display: block;
