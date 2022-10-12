@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-Zenh87qX5JnK2Jl0vWa8Ck2rdkQ2Bzep5IDxbcnCeuOxjzrPF/et3URy9Bv1WTRi" crossorigin="anonymous">
+    <title>Trybetrip</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg bg-light " id="header">
+        <p class="h1">Trybetrip</p>
+    </nav>
+
+    <form action="">
+
+        <section class= "form-control m-2" id="contact">
+            <fieldset>
+                <legend>Contato:</legend>
+                <label for="fullname"  class="col-form-label mb-2"> Nome:
+                    <input type="text" name="name" id="fullname" placeholder="Digite seu nome completo" class="input-group-text" required>
+                </label>
+                <label for="mail" class="col-form-label"> Email:
+                    <input type="email" name="email" id="mail" placeholder="Digite seu email" class="input-group-text" required>
+                </label>
+            </fieldset>
+        </section>
+
+        <section class= "form-control m-2" id="favorite-place">
+            <fieldset id="destiny">
+                <legend>Destino Preferido:</legend>
+                <label for="option1">
+                    <input type="radio" name="favorite-place" id="option1" class="form-check-input mt-0"> Cidade
+                </label>
+                <label for="option2">
+                    <input type="radio" name="favorite-place" id="option2" class="form-check-input mt-0"> Campo
+                </label>
+                <label for="option3">
+                    <input type="radio" name="favorite-place" id="option3" class="form-check-input mt-0"> Praia
+                </label>
+                <label for="option4">
+                    <input type="radio" name="favorite-place" id="option4" class="form-check-input mt-0"> Montanha
+                </label>
+            </fieldset>
+        </section>
+
+        <section class= "form-control m-2" id="answer">
+            <fieldset>
+                <legend>Por que você deveria ser a pessoa desenvolvedora a ganhar o concurso TrybeTrip?</legend>
+                <label for="textarea"></label>
+                <textarea class="form-control" name="" id="textarea" cols="65" rows="10" maxlength="500" required></textarea>
+            </fieldset>
+        </section>
+
+        <section class= "form-control m-2" id="best-date">
+            <fieldset>
+                <legend>Qual a melhor data para realizar sua viagem?</legend>
+                <label for="trip-date"></label>
+                <input type="date" name="date" id="trip-date" required>
+            </fieldset>
+        </section>
+
+        <section class= "form-control m-2" id="agree">
+            <fieldset>
+                <legend>Newsletter</legend>
+                <label class="form-check-label" for="newsletter">Gostaria de receber outras incríveis oportunidades oferecidas pela Trybe?</label>
+                <input type="checkbox" class="form-check-input"
+                name="newsletter" id="newsletter">
+            </fieldset>
+        </section>
+
+        <section class="form-control m-2" id="copyright">
+            <fieldset>
+                <legend>Direito de imagem</legend>
+                <label class="form-check-label" for="image-copyrights">Concordo que imagens das minhas férias poderão ser usadas na divulgação de concursos futuros.</label>
+                <input type="checkbox" class="form-check-input" name="copyright" id="image-copyright">
+            </fieldset>
+        </section>
+
+        <button class="btn btn-primary m-2" type="submit" id="send">Enviar</button>
+    </form>
+</body>
+</html>
