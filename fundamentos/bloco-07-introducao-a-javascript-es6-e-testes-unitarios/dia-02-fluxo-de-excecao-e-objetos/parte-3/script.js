@@ -27,9 +27,13 @@ const lesson1 = {
 
   const objectLength = (object) => console.log(Object.entries(object).length);
 
+  const listValues = (object) => console.log(Object.values(object));
+
   newProperty(lesson2, 'turno', 'noite');
 
   listKeys(lesson1);
 
   objectLength(lesson2);
+
+  listValues(lesson3);
   
