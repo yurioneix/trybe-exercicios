@@ -23,4 +23,9 @@ const lesson1 = {
     console.log(object);
   }
 
+  const listKeys = (object) => console.log(Object.keys(object));
+
   newProperty(lesson2, 'turno', 'noite');
+
+  listKeys(lesson1);
+  
