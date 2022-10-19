@@ -29,11 +29,10 @@ const lesson1 = {
 
   const listValues = (object) => console.log(Object.values(object));
 
+  const allLessons = Object.assign({}, {lesson1, lesson2, lesson3});
+
   newProperty(lesson2, 'turno', 'noite');
-
   listKeys(lesson1);
-
   objectLength(lesson2);
-
   listValues(lesson3);
-  
+  console.log(allLessons);
