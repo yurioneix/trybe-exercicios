@@ -17,3 +17,10 @@ const lesson1 = {
     professor: 'Maria Clara',
     turno: 'noite',
   };
+
+  const newProperty = (object, key, value) => {
+    object[key] = value;
+    console.log(object);
+  }
+
+  newProperty(lesson2, 'turno', 'noite');
