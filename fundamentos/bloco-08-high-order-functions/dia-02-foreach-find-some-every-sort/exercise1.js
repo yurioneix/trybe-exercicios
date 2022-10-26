@@ -64,7 +64,7 @@ const books = [
   // Adicione o código do exercício aqui:
   const authorBornIn1947 = () => books.find((book) => book.author.birthYear === 1947).author.name;
 
-  console.log(authorBornIn1947(books));
+  console.log(authorBornIn1947());
 
   const smallerName = () => {
     let nameBook = books[0].name;
@@ -79,3 +79,17 @@ const books = [
 
   console.log(smallerName());
 
+  const expectedResult = {
+    id: 1,
+    name: 'As Crônicas de Gelo e Fogo',
+    genre: 'Fantasia',
+    author: {
+          name: 'George R. R. Martin',
+      birthYear: 1948,
+    },
+      releaseYear: 1991,
+  };
+
+  const getNamedBook = () => books.find((book) => book.name.length === 26);
+  console.log(getNamedBook());
+  
