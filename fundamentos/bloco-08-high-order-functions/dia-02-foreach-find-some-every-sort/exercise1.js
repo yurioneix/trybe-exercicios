@@ -90,8 +90,17 @@ const books = [
   const everyoneWasBornOnSecXX = () => books.every((book) => (book.author.birthYear >= 1901 && book.author.birthYear <= 2000)); 
   console.log(everyoneWasBornOnSecXX());
 
-  const expectedResult = true;
 
   const someBookWasReleaseOnThe80s = () => books.some((book) => book.releaseYear >= 1980 && book.releaseYear <= 1989);
   
   console.log(someBookWasReleaseOnThe80s());
+
+  const expectedResult = false;
+  const authorUnique = () => {
+    return books.every((book) =>
+      !books.some((bookSome) =>
+        (bookSome.author.birthYear === book.author.birthYear)
+        && (bookSome.author.name !== book.author.name)));
+  }
+
+  console.log(authorUnique());
