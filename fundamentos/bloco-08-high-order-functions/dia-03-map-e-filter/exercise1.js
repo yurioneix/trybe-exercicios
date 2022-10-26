@@ -93,3 +93,13 @@ const books = [
     return books.filter((book) => book.genre === 'Ficção Científica' || book.genre === 'Fantasia').map((book) => book.author.name).sort();
   }
 console.log(fantasyOrScienceFictionAuthors());
+
+const expectedResult = [
+    'O Senhor dos Anéis',
+    'Fundação',
+    'O Chamado de Cthulhu',
+  ];
+  
+  function oldBooks() {
+    // escreva seu código aqui
+  }
