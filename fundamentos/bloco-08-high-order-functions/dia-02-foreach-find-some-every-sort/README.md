@@ -5,3 +5,5 @@
 #### Retorne o nome do livro de menor nome.
 
 #### Encontre o primeiro livro cujo nome possui 26 caracteres.
+
+#### Ordene os livros por data de lançamento em ordem decrescente.
