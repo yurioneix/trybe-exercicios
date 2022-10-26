@@ -99,3 +99,9 @@ const books = [
   }
 
   console.log(oldBooks());
+
+  const expectedResult = 'O Senhor dos Anéis';
+
+  function authorWith3DotsOnName() {
+  // escreva seu código aqui
+  }
