@@ -9,3 +9,7 @@
 #### Calcule a média de idade que as pessoas autoras tinham quando seus respectivos livros foram lançados.
 
 #### Encontre o livro com o maior nome.
+
+### Exercício 3
+
+#### Dado o array de nomes, utilize o reduce para retornar a quantidade de vezes em que aparece a letra a, maiúscula ou minúscula.
