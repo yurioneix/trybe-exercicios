@@ -72,14 +72,18 @@
     },
   ];
   
-  const reduceNames = (array) => array
-    .map((book) => book.author.name)
-    .reduce((acc, curr) => `${acc}, ${curr}`);
+//   const reduceNames = (array) => array
+//     .map((book) => book.author.name)
+//     .reduce((acc, curr) => `${acc}, ${curr}`);
 
-  console.log(reduceNames(books));
+//   console.log(reduceNames(books));
 
   const expectedResult = 43;
 
-  function averageAge() {
-  // escreva seu código aqui
+  const averageAge = (array) => {
+    return array
+    .map((book) => book.releaseYear - book.author.birthYear)
+    .reduce((acc, curr) => Math.round(acc + curr / array.length), 0)
   }
+
+  console.log(averageAge(books))
