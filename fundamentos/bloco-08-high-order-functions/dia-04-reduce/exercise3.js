@@ -3,9 +3,14 @@ const names = [
     'Abegildo', 'Adicellia', 'Aladonata',
     'Abeladerco', 'Adieidy', 'Alarucha',
   ];
+
   
   const expectedResult = 20;
   
-  function containsA() {
-    // escreva seu código aqui
-  }
+  const containsA = (array) => array
+    .map((name) => name.toLowerCase())
+    .reduce(
+        (acc, curr) => curr.startsWith('a') || curr.startsWith('aa') || curr.endsWith('a') ? acc + curr : acc, 0)
+  
+
+  console.log(containsA(names));
